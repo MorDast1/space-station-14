@@ -14,7 +14,10 @@
 // SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
+// SPDX-FileCopyrightText: 2025 Kyle Tyo <akikai297@gmail.com>
 // SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2025 freeze2222 <opop1094@gmail.com>
 // SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
@@ -31,7 +34,8 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly ILocalizationManager _loc = default!;
 
         // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
+        private const string Culture = "ru-RU"; // Corvax-Localization
+        private const string FallbackCulture = "en-US"; // Corvax-Localization
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -47,8 +51,12 @@ namespace Content.Shared.Localizations
         public void Initialize()
         {
             var culture = new CultureInfo(Culture);
+            var fallbackCulture = new CultureInfo(FallbackCulture); // Corvax-Localization
 
             _loc.LoadCulture(culture);
+            _loc.LoadCulture(fallbackCulture); // Corvax-Localization
+            _loc.SetFallbackCluture(fallbackCulture); // Corvax-Localization
+            _loc.AddFunction(culture, "MANY", FormatMany); // Corvax-Localization: To prevent problems in auto-generated locale files
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);

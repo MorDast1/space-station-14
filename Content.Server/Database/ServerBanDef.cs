@@ -10,6 +10,8 @@
 // SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 // SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
+// SPDX-FileCopyrightText: 2025 freeze2222 <opop1094@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -100,9 +102,9 @@ namespace Content.Server.Database
 
             return $"""
                    {loc.GetString("ban-banned-1")}
-                   {loc.GetString("ban-banned-2", ("adminName", GetUsername(BanningAdmin.ToString())))}
-                   {loc.GetString("ban-banned-3", ("reason", Reason))}
+                   {loc.GetString("ban-banned-2", ("reason", Reason))}
                    {expires}
+                   {loc.GetString("ban-banned-3")}
                    {loc.GetString("ban-banned-4")}
                    """;
         }
