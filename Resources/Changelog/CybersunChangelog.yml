@@ -1,4 +1,4 @@
-Name: CybersunLog
+Name: Gooblog
 Order: -1
 Entries:
 - author: Nymos
@@ -7,3 +7,9 @@ Entries:
       message: Bugs
   id: 1
   time: '1984-06-15T12:54:44.0000000+00:00'
+- author: Nymos
+  changes:
+    - type: Tweak
+      message: Changelog test
+  id: 2
+  time: '2025-06-05T20:04:02.0000000+00:00'
