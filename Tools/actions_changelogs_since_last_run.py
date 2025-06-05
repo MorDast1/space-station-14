@@ -110,8 +110,10 @@ def get_last_changelog(file: str) -> str:
     
     if most_recent is not None:
         last_sha = most_recent["head_commit"]["id"]
-        
-    print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
+        print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
+    else:
+        print(f"No successful publish job was found")
+
     last_changelog_stream = get_last_changelog_by_sha(
         file, session, last_sha, github_repository
     )
