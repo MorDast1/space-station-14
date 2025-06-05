@@ -12,7 +12,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3.6.0
     - name: Publish changelog (Discord)
