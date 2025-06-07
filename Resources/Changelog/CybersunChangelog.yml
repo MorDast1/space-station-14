@@ -1,4 +1,4 @@
-Name: Cybersunlog
+Name: Gooblog
 Order: -1
 Entries:
 - author: Nymos
@@ -13,3 +13,19 @@ Entries:
       message: Changelog test
   id: 2
   time: '2025-06-05T20:04:02.0000000+00:00'
+- author: freeze2222
+  changes:
+    - type: Add
+      message: Radium content restored.
+    - type: Remove
+      message: Removed Radium surgery.
+    - type: Remove
+      message: Removed Radium changeling.
+    - type: Remove
+      message: Removed some Radium reagents/reactions.
+    - type: Tweak
+      message: All windows are semi-transparent (including lobby screen).
+    - type: Fix
+      message: Gateway window size is now normal.
+  id: 3
+  time: '2025-06-07T17:39:29.0000000+00:00'
