@@ -18,7 +18,7 @@ SPDX-License-Identifier: MIT
             <Label Name="NextUnlockLabel"
                    Text="{Loc 'gateway-window-portal-unlock'}"
                    Margin="5"
-                   SetWidth="128"/>
+                   SetWidth="200"/>
             <ProgressBar Name="NextUnlockBar"
                          HorizontalExpand="True"
                          MinValue="0"
@@ -30,7 +30,7 @@ SPDX-License-Identifier: MIT
             <Label Name="NextReadyLabel"
                    Text="{Loc 'gateway-window-portal-cooldown'}"
                    Margin="5"
-                   SetWidth="128"/>
+                   SetWidth="200"/>
 	        <ProgressBar Name="NextReadyBar"
 	                     HorizontalExpand="True"
 	                     MinValue="0"
