@@ -29,3 +29,31 @@ Entries:
       message: Gateway window size is now normal.
   id: 3
   time: '2025-06-07T17:39:29.0000000+00:00'
+- author: freeze2222
+  changes:
+    - type: Fix
+      message: Автодокументация -> Автодок
+    - type: Fix
+      message: Ignition -> Прижигание
+    - type: Fix
+      message: Сундук -> Тело
+    - type: Fix
+      message: ipc -> КПБ
+    - type: Fix
+      message: Исправлена локализация при осмотре
+    - type: Fix
+      message: Исправлена локализация мед. сканнера
+    - type: Fix
+      message: Исправлена локализация частей тела
+    - type: Fix
+      message: Исправлена локализация коллективного разума
+    - type: Fix
+      message: Исправлена локализация целей
+    - type: Fix
+      message: Исправлена локализация анализатора артефактов
+    - type: Fix
+      message: Исправлены размеры кнопки готовности в лобби
+    - type: Add
+      message: А, точно, с Днём Рождения меня! ^w^
+  id: 4
+  time: '2025-06-09T16:46:56.0000000+00:00'
