@@ -3,6 +3,8 @@
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 2025 freeze2222 <46649391+freeze2222@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 freeze2222 <opop1094@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
