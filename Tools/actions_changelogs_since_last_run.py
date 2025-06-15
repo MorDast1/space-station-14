@@ -30,7 +30,7 @@ GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-CHANGELOG_FILES = ["Resources/Changelog/GoobChangelog.yml", "Resources/Changelog/CybersunChangelog.yml"]
+CHANGELOG_FILES = ["Resources/Changelog/GoobChangelog.yml", "Resources/Changelog/Changelog.yml", "Resources/Changelog/CybersunChangelog.yml"]
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 
