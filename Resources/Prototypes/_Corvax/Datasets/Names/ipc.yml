@@ -9,9 +9,9 @@
   values:
     prefix: names-ipc-first-female-dataset-
     count: 100
-  
+
 - type: localizedDataset
   id: NamesIpcLast
   values:
     prefix: names-ipc-last-dataset-
-    count: 100
+    count: 1000
