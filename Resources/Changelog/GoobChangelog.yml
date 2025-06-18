@@ -1,3 +1,23 @@
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 GoobBotTest <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 GoobBotTest[bot] <922032+GoobBotTest[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 GoobBot[bot] <923088+GoobBot[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 silver2127 <52584484+silver2127@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 freeze2222 <46649391+freeze2222@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 freeze2222 <opop1094@gmail.com>
+# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 Name: Gooblog
 Order: 1
 Entries:
@@ -11303,3 +11323,51 @@ Entries:
       message: Security got new melee toys to play with.
   id: 1242
   time: '2025-06-15T08:15:54.0000000+00:00'
+- author: pheenty
+  changes:
+    - type: Fix
+      message: Skeletons are now correctly healed by milk.
+    - type: Fix
+      message: Lizards can now open doors, pilot shuttles etc.
+    - type: Fix
+      message: Vulps and shadowkins can now host anomalies.
+  id: 1243
+  time: '2025-06-15T19:43:36.0000000+00:00'
+- author: SX-7
+  changes:
+    - type: Fix
+      message: Polymorphs no longer spawn urists
+  id: 1244
+  time: '2025-06-16T09:11:35.0000000+00:00'
+- author: SX-7
+  changes:
+    - type: Fix
+      message: Traitors should get their uplinks now
+  id: 1245
+  time: '2025-06-16T13:16:56.0000000+00:00'
+- author: Aidenkrz
+  changes:
+    - type: Add
+      message: Proximity voicechat, check discord announcements for more details.
+  id: 1246
+  time: '2025-06-17T00:58:34.0000000+00:00'
+- author: IAmForcedIntoMakingClLongerThanActualChanges
+  changes:
+    - type: Fix
+      message: Abductor multitool can now recharge again.
+    - type: Tweak
+      message: Abductor multitool now recharges even in multitool mode.
+    - type: Tweak
+      message: Abductor multitool cooldown increased to 20 from 15.
+    - type: Fix
+      message: Security can again choose winter jackboots in the loadout.
+    - type: Remove
+      message: Removed duplicate tools from syndicate surgery duffel bag.
+    - type: Fix
+      message: >-
+        Hyperzine description in the uplink now correctly describes its
+        duration.
+    - type: Tweak
+      message: Camera bug now costs 12 TC.
+  id: 1247
+  time: '2025-06-18T02:04:30.0000000+00:00'
