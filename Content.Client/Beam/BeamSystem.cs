@@ -2,6 +2,9 @@
 // SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
+// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -13,6 +16,8 @@ namespace Content.Client.Beam;
 
 public sealed class BeamSystem : SharedBeamSystem
 {
+    [Dependency] private readonly SpriteSystem _sprite = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -27,11 +32,11 @@ public sealed class BeamSystem : SharedBeamSystem
 
         if (TryComp<SpriteComponent>(beam, out var sprites))
         {
-            sprites.Rotation = args.UserAngle;
+            _sprite.SetRotation((beam, sprites), args.UserAngle);
 
             if (args.BodyState != null)
             {
-                sprites.LayerSetState(0, args.BodyState);
+                _sprite.LayerSetRsiState((beam, sprites), 0, args.BodyState);
                 sprites.LayerSetShader(0, args.Shader);
             }
         }
