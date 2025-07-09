@@ -61,5 +61,5 @@ jobs:
           commit-message: Update Credits
           title: Update Credits
           body: This is an automated Pull Request. This PR updates the github contributors in the credits section.
-          author: GoobBot <uristmchands@proton.me>
+          author: CybersunBot <cybersunbot@proton.me>
           branch: automated/credits-${{env.NOW}}
