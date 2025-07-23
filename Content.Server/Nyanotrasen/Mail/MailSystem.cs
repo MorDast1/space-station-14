@@ -1,7 +1,6 @@
 // SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
@@ -10,7 +9,6 @@
 // SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
 // SPDX-FileCopyrightText: 2025 Tom <t.jans@student.fontys.nl>
 // SPDX-FileCopyrightText: 2025 Vrilly <tnjans@outlook.de>
-// SPDX-FileCopyrightText: 2025 XO6bl4 <49454110+XO6bl4@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
 //
@@ -65,8 +63,7 @@ using Content.Shared.Tag;
 using Robust.Shared.Audio.Systems;
 using Timer = Robust.Shared.Timing.Timer;
 using Content.Server._DV.Cargo.Systems;
-using Content.Shared.Chat;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Content.Shared.Chat; // Einstein Engines - Languages
 
 namespace Content.Server.Mail
 {
