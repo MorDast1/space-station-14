@@ -3,9 +3,9 @@
 // SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
 // SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
 // SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
 // SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
 // SPDX-FileCopyrightText: 2025 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 DrSmugleaf <drsmugleaf@gmail.com>
 // SPDX-FileCopyrightText: 2025 Ducks <97200673+TwoDucksOnnaPlane@users.noreply.github.com>
@@ -27,14 +27,14 @@
 // SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
 // SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
 // SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
 // SPDX-FileCopyrightText: 2025 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
 // SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 freeze2222 <46649391+freeze2222@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 freeze2222 <opop1094@gmail.com>
 // SPDX-FileCopyrightText: 2025 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
@@ -284,19 +284,31 @@ public sealed partial class GoobCVars
     #region Goobcoins
 
     public static readonly CVarDef<int> GoobcoinsPerPlayer =
-        CVarDef.Create("goob.coins_per_player", 10, CVar.SERVERONLY);
+        CVarDef.Create("servercurrency.per_player", 10, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinsPerGreentext =
-        CVarDef.Create("goob.coins_per_greentext", 5, CVar.SERVERONLY);
+        CVarDef.Create("servercurrency.per_greentext", 5, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinNonAntagMultiplier =
-        CVarDef.Create("goob.coins_non_antag_multiplier", 1, CVar.SERVERONLY);
+        CVarDef.Create("servercurrency.non_antag_multiplier", 1, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinServerMultiplier =
-        CVarDef.Create("goob.coins_server_multiplier", 1, CVar.SERVERONLY);
+        CVarDef.Create("servercurrency.server_multiplier", 1, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GoobcoinMinPlayers =
-        CVarDef.Create("goob.coins_min_players", 5, CVar.SERVERONLY);
+        CVarDef.Create("servercurrency.min_players", 5, CVar.SERVERONLY);
+
+    public static readonly CVarDef<bool> GoobcoinUseLowpopMultiplier =
+        CVarDef.Create("servercurrency.use_lowpop_multiplier", true, CVar.SERVERONLY);
+
+    public static readonly CVarDef<double> GoobcoinLowpopMultiplierStrength =
+        CVarDef.Create("servercurrency.lowpop_multiplier_strength", 1.0, CVar.SERVERONLY);
+
+    public static readonly CVarDef<bool> GoobcoinUseShortRoundPenalty =
+        CVarDef.Create("servercurrency.use_shortround_penalty", true, CVar.SERVERONLY);
+
+    public static readonly CVarDef<int> GoobcoinShortRoundPenaltyTargetMinutes =
+        CVarDef.Create("servercurrency.shortround_penalty_target_minutes", 90, CVar.SERVERONLY);
 
     #endregion
 

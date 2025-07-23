@@ -13,6 +13,7 @@ using Content.Goobstation.Client.IoC;
 using Content.Goobstation.Client.Voice;
 using Content.Goobstation.Client.JoinQueue;
 using Content.Goobstation.Common.MisandryBox;
+using Content.Goobstation.Common.ServerCurrency;
 using Robust.Shared.ContentPack;
 using Robust.Shared.IoC;
 using Robust.Shared.Timing;
@@ -24,6 +25,7 @@ public sealed class EntryPoint : GameClient
     [Dependency] private readonly IVoiceChatManager _voiceManager = default!;
     [Dependency] private readonly JoinQueueManager _joinQueue = default!;
     [Dependency] private readonly ISpiderManager _spider = default!;
+    [Dependency] private readonly ICommonCurrencyManager _currMan = default!;
 
     public override void PreInit()
     {
@@ -45,6 +47,7 @@ public sealed class EntryPoint : GameClient
         _voiceManager.Initalize();
         _joinQueue.Initialize();
         _spider.Initialize();
+        _currMan.Initialize();
     }
 
     public override void Update(ModUpdateLevel level, FrameEventArgs frameEventArgs)
@@ -57,5 +60,12 @@ public sealed class EntryPoint : GameClient
                 _voiceManager.Update();
                 break;
         }
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+
+        _currMan.Shutdown();
     }
 }
