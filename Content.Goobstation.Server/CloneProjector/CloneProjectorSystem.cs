@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 2025 CybersunBot <cybersunbot@proton.me>
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
 // SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
@@ -295,7 +298,7 @@ public sealed partial class CloneProjectorSystem : SharedCloneProjectorSystem
         roleComp.RoleDescription = Loc.GetString(projector.Comp.GhostRoleDescription);
         roleComp.RoleRules = Loc.GetString(projector.Comp.GhostRoleRules);
 
-        Dirty(clone, projector.Comp);
+        Dirty(projector);
         return true;
     }
 
@@ -331,8 +334,6 @@ public sealed partial class CloneProjectorSystem : SharedCloneProjectorSystem
         if (projector.CloneUid is not { } clone
             || !_container.IsEntityOrParentInContainer(clone))
             return false;
-
-        Dirty(clone, projector);
 
         return _container.TryRemoveFromContainer(clone);
     }
